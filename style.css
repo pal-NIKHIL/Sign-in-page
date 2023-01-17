@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0 auto;
+}
+.container>div{
+    flex:1;
+    padding: 0 20px;
+}
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+p{
+    opacity: 0.8;
+    font-size: 15px;
+}
+.box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box p{
+    margin: 0;
+}
+.box-blue{
+    background-color: hsl(248, 32%, 49%);   
+    padding: 20px;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 14px;
+    font-weight: 500;
+}
+input:focus{
+    border: 2px solid hsl(248, 32%, 49%);
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid hsl(154, 59%, 40%);
+    box-shadow: 0 2px hsl(154, 59%, 40%);
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 0 hsl(154, 59%, 40%);
+}
+small{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(246, 25%, 77%);
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+a{
+    color: hsl(0, 100%, 74%);font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+.form-control img{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    opacity: 0;
+
+}
+.form-control.error img{
+    opacity: 1;
+}
+.form-control small{
+ bottom: -25px;
+ position: absolute;
+ right: 0;
+ text-align: right;
+ opacity: 0;
+ color: hsl(0, 100%, 74%);
+ font-weight: 500px;
+}
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
